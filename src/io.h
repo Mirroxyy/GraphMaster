@@ -1,6 +1,11 @@
 #ifndef IO_H
 #define IO_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 // Инициализация консольного интерфейса
 void io_init();
 
@@ -19,8 +24,8 @@ void io_print(const char *msg);
 // Вывод результата Дейкстры
 void io_print_dijkstra(const int *path, int path_len, int total_weight);
 
-// Вывод результата MST
-void io_print_mst(const MSTResult *res);
+// // Вывод результата MST
+// void io_print_mst(const MSTResult *res);
 
 // Вывод результата BFS
 void io_print_bfs(const int *order, int order_len);
